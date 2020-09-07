@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-07T01:36:32.837Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="EhuRJnEMqQfqxAK514zv" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-07T05:44:11.819Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="ryRZz54wm3LOYSgymD7_" version="13.6.6" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2276" dy="1999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -319,14 +319,8 @@
         <mxCell id="qY3Yjt8-HWlbZg-lDMHw-115" value="Sell" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="177.5" y="85" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-116" value="Product_In_Shop" style="rounded=0;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-116" value="Product_In_Shop" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="432.5" y="87" width="137.5" height="64" as="geometry" />
-        </mxCell>
-        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-118" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=open;startFill=0;curved=1;strokeWidth=1;startSize=12;" parent="1" source="qY3Yjt8-HWlbZg-lDMHw-1" target="qY3Yjt8-HWlbZg-lDMHw-115" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="291.03999999999996" y="95" as="sourcePoint" />
-            <mxPoint x="301" y="15" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="qY3Yjt8-HWlbZg-lDMHw-120" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="qY3Yjt8-HWlbZg-lDMHw-115" target="qY3Yjt8-HWlbZg-lDMHw-116" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -565,24 +559,6 @@
             <mxPoint x="910" y="279" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-236" value="id#" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4" parent="1" vertex="1">
-          <mxGeometry x="281" y="170" width="75" height="51" as="geometry" />
-        </mxCell>
-        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-237" value="" style="endArrow=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="qY3Yjt8-HWlbZg-lDMHw-116" target="qY3Yjt8-HWlbZg-lDMHw-236" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="395" y="279" as="sourcePoint" />
-            <mxPoint x="122.5" y="238" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-239" value="id#" style="ellipse;whiteSpace=wrap;html=1;fontStyle=4" parent="1" vertex="1">
-          <mxGeometry x="1030" y="220" width="75" height="51" as="geometry" />
-        </mxCell>
-        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-240" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qY3Yjt8-HWlbZg-lDMHw-179" target="qY3Yjt8-HWlbZg-lDMHw-239" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1181.5" y="201" as="sourcePoint" />
-            <mxPoint x="871.5" y="288" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="qY3Yjt8-HWlbZg-lDMHw-243" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="410" y="50" width="40" height="50" as="geometry" />
         </mxCell>
@@ -718,6 +694,28 @@
         </mxCell>
         <mxCell id="Pe38G29XnzzSJV1ZxySx-27" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Problem:&lt;br&gt;1. complaint should not be weak entity set of employee&lt;br&gt;2. If one user complaints one product in one shop multiple times, complaints weak entity set cannot represent it.&lt;br&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 102)&quot;&gt;3. Us&lt;/span&gt;er cannot complaints shop or product seperately.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1800.5" y="138" width="679" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="elRTguy5yI2VJbRMH6yt-4" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="79.34936490538904" y="93.17949192431124" width="63.30127018922194" height="59.64101615137753" as="geometry" />
+        </mxCell>
+        <mxCell id="qY3Yjt8-HWlbZg-lDMHw-118" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;curved=1;strokeWidth=1;startSize=12;" parent="elRTguy5yI2VJbRMH6yt-4" source="qY3Yjt8-HWlbZg-lDMHw-1" target="qY3Yjt8-HWlbZg-lDMHw-115" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="211.6906350946109" y="1.820508075688764" as="sourcePoint" />
+            <mxPoint x="221.65063509461095" y="-78.17949192431124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="elRTguy5yI2VJbRMH6yt-1" value="" style="group;rotation=-120;" vertex="1" connectable="0" parent="elRTguy5yI2VJbRMH6yt-4">
+          <mxGeometry x="11.650635094610962" y="4.820508075688764" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="elRTguy5yI2VJbRMH6yt-3" value="" style="curved=1;endArrow=none;html=1;strokeColor=#000000;strokeWidth=2;fontSize=10;endFill=0;" edge="1" parent="elRTguy5yI2VJbRMH6yt-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="41" y="3" as="sourcePoint" />
+            <mxPoint x="35" y="29" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-10" y="13" />
+              <mxPoint x="50" y="37" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
