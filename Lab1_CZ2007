@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-09-07T00:27:40.463Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="s7sYRqaZECkm06phcYyL" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-07T01:36:32.837Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="EhuRJnEMqQfqxAK514zv" version="13.6.6" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="2660" dy="2212" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2276" dy="1999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -632,7 +632,7 @@
             <mxPoint x="440" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Pe38G29XnzzSJV1ZxySx-2" value="&lt;font style=&quot;font-size: 28px&quot;&gt;Problem: &lt;br&gt;1. If we draw price as an attribute of product, there is no way to reflect the history of price (one price at a certain time)&lt;br&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 102)&quot;&gt;2. it is hard to represent the relationship among order, product and shop&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 102)&quot;&gt;3&lt;/span&gt;. Some shops may not have some products, in this situation, we&#39;d better to use a subclass of product which is product_in_shop so that all the values in product_in_order can correspond to a shop&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="Pe38G29XnzzSJV1ZxySx-2" value="&lt;font style=&quot;font-size: 28px&quot;&gt;Problem: &lt;br&gt;1. If we draw price as an attribute of product, there is no way to reflect the history of price (one price at a certain time)&lt;br&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 102)&quot;&gt;3&lt;/span&gt;. Some shops may not have some products, in this situation, we&#39;d better to use a subclass of product which is product_in_shop so that all the values in product_in_product can correspond to a shop&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1233" y="-341" width="821" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Pe38G29XnzzSJV1ZxySx-5" value="complaints" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
