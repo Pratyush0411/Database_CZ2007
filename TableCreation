@@ -1,0 +1,35 @@
+CREATE TABLE Employees (
+eID int IDENTITY (1,1) PRIMARY KEY, [name] char (100), salary money);
+
+CREATE TABLE Complaints (
+cID int IDENTITY (1,1) PRIMARY KEY, [text] varchar (MAX), [status] char (100), filedDateTime datetime, handledDateTime datetime, [uID] int);
+
+CREATE TABLE ComplaintsOnShops (
+cID int IDENTITY (1,1) PRIMARY KEY, sName char (100));
+
+CREATE TABLE ComplaintsOnOrders (
+cID int IDENTITY (1,1) PRIMARY KEY, oID int);
+
+CREATE TABLE [User] (
+[uID] int IDENTITY (1,1) PRIMARY KEY, [name] char (100));
+
+CREATE TABLE Orders (
+oID int IDENTITY (1,1) PRIMARY KEY, shippingAddress char (100), [uID] int, [dateTime] datetime);
+
+CREATE TABLE Products (
+pID int IDENTITY (1,1) PRIMARY KEY, pName char (100), maker char (100), category char(100));
+
+CREATE TABLE ProductsInOrders (
+pID int, oID int, [sID] int IDENTITY (1,1) PRIMARY KEY (pID, oID, [sID]), priceInOrder money, quantityInOrder int, deliveryDate date, [status] char (100));
+
+CREATE TABLE ProductsInShops (
+pID int, [sID] int IDENTITY (1,1) PRIMARY KEY (pID, [sID]), priceInShop money, quantityInShop int);
+
+CREATE TABLE Shops (
+[sID] int IDENTITY (1,1) PRIMARY KEY, sName char (100));
+
+CREATE TABLE PriceHistory (
+pID int, [sID] int, startDate date, endDate date, PRIMARY KEY (pID, [sID], startDate, endDate), price money);
+
+CREATE TABLE Feedback (
+[uID] int, [pID] int IDENTITY (1,1) PRIMARY KEY ([uID], pID), rating int, comment varchar (MAX), [dateTime] datetime);
