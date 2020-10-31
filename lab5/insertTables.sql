@@ -1,0 +1,9 @@
+INSERT INTO USERS
+(Name)
+VALUES 
+('USER1'),
+('USER2'),
+('USER3'),
+('USER4');
+
+
