@@ -17,35 +17,35 @@ SET IDENTITY_INSERT EMPLOYEES OFF;
 
 SET IDENTITY_INSERT SHOPS ON;
 
-INSERT INTO SHOPS([ID],[sName]) VALUES(1,'Rutrum Justo Incorporated'),(2,'Purus Sapien Corporation'),(3,'Sagittis Felis Donec Corporation'),(4,'Maecenas Libero PC'),(5,'Tristique Institute'),(6,'Scelerisque Corporation'),(7,'Mattis Foundation'),(8,'Habitant Morbi Associates'),(9,'Venenatis Industries'),(10,'Lacinia Orci Corp.');
-INSERT INTO SHOPS([ID],[sName]) VALUES(11,'Pede Ac LLP'),(12,'Sed Company'),(13,'Mauris Erat Eget Associates'),(14,'Consequat Nec Mollis Institute'),(15,'Sed Nulla Corporation'),(16,'Enim Industries'),(17,'Neque Associates'),(18,'Amet Consectetuer Industries'),(19,'Erat Volutpat Inc.'),(20,'Convallis Est Vitae LLC');
-INSERT INTO SHOPS([ID],[sName]) VALUES(21,'Aliquet Metus Urna Foundation'),(22,'Sed Congue PC'),(23,'Suspendisse Sagittis Incorporated'),(24,'Natoque Penatibus Incorporated'),(25,'Metus Vivamus Industries'),(26,'Rutrum Magna Ltd'),(27,'Orci In Consequat LLP'),(28,'Nulla Eget Institute'),(29,'Eu Inc.'),(30,'Tincidunt Nibh Phasellus Consulting');
-INSERT INTO SHOPS([ID],[sName]) VALUES(31,'Nascetur Ridiculus Inc.'),(32,'Tincidunt Congue Inc.'),(33,'Diam Inc.'),(34,'Sem Magna Company'),(35,'Donec Ltd'),(36,'Ut Aliquam Iaculis Institute'),(37,'Cras Lorem Lorem PC'),(38,'Mauris Consulting'),(39,'Amet PC'),(40,'Consectetuer Adipiscing Inc.');
-INSERT INTO SHOPS([ID],[sName]) VALUES(41,'Libero Integer Limited'),(42,'Scelerisque Neque PC'),(43,'Imperdiet Ullamcorper Duis Associates'),(44,'Non Quam Pellentesque Ltd'),(45,'In Limited'),(46,'Pharetra Felis Corp.'),(47,'Aptent Institute'),(48,'Rutrum Magna Inc.'),(49,'Ut Lacus Foundation'),(50,'Tempus Industries');
-INSERT INTO SHOPS([ID],[sName]) VALUES(51,'Nunc Industries'),(52,'Donec Felis Orci PC'),(53,'Sed Corp.'),(54,'Montes LLP'),(55,'Nibh Aliquam Ornare Foundation'),(56,'Integer Mollis LLP'),(57,'Urna Ut Tincidunt Consulting'),(58,'Et Euismod PC'),(59,'In Dolor Foundation'),(60,'Nec Ante Maecenas Company');
-INSERT INTO SHOPS([ID],[sName]) VALUES(61,'At Arcu Industries'),(62,'Ligula Nullam Corporation'),(63,'Molestie Sodales Mauris Incorporated'),(64,'Euismod Enim Etiam Consulting'),(65,'Gravida Associates'),(66,'Blandit Congue In Company'),(67,'Nisi LLP'),(68,'Justo Nec Ante PC'),(69,'Integer Sem Incorporated'),(70,'Mus Proin LLC');
-INSERT INTO SHOPS([ID],[sName]) VALUES(71,'Feugiat Industries'),(72,'Pede Cum Sociis Associates'),(73,'Porttitor Vulputate Posuere Incorporated'),(74,'Sit Amet Luctus Limited'),(75,'Donec Associates'),(76,'Euismod Est Arcu Industries'),(77,'Arcu Foundation'),(78,'Sed Associates'),(79,'Dolor Dolor Tempus PC'),(80,'Nam Limited');
-INSERT INTO SHOPS([ID],[sName]) VALUES(81,'Elit Inc.'),(82,'Sem Consequat Inc.'),(83,'Non Enim Mauris Foundation'),(84,'Aliquam Institute'),(85,'Vulputate Consulting'),(86,'Aenean PC'),(87,'Arcu Vel Corp.'),(88,'Eget Varius Inc.'),(89,'Donec LLP'),(90,'Integer In Company');
-INSERT INTO SHOPS([ID],[sName]) VALUES(91,'Mauris Inc.'),(92,'Egestas A Ltd'),(93,'Nulla Donec Non Inc.'),(94,'Egestas Nunc Inc.'),(95,'Massa Quisque Foundation'),(96,'Eu Placerat Eget Limited'),(97,'Fusce Ltd'),(98,'Risus LLC'),(99,'Pharetra Quisque Inc.'),(100,'Mauris Blandit Associates');
-INSERT INTO SHOPS([ID],[sName]) VALUES(101,'Pellentesque Incorporated'),(102,'Odio Company'),(103,'Phasellus Institute'),(104,'Arcu Eu Odio Institute'),(105,'Ornare Limited'),(106,'Odio LLC'),(107,'Libero Morbi Accumsan Incorporated'),(108,'Interdum Foundation'),(109,'Nulla In Tincidunt Associates'),(110,'Mattis Velit Justo Incorporated');
-INSERT INTO SHOPS([ID],[sName]) VALUES(111,'Justo Faucibus LLC'),(112,'Adipiscing Fringilla Corporation'),(113,'Dictum Augue Malesuada LLC'),(114,'Et Risus Inc.'),(115,'Orci Ltd'),(116,'Justo Sit Amet Institute'),(117,'Velit Dui Associates'),(118,'Pharetra Ut Pharetra Corp.'),(119,'Mauris Vel Turpis LLC'),(120,'Non Leo Vivamus Foundation');
+INSERT INTO SHOPS([ID],[sName]) VALUES(1,'Skajo'),(2,'Cenditel'),(3,'Yadel'),(4,'Centizu'),(5,'Edgeify'),(6,'Skiba'),(7,'Skyble'),(8,'Browseblab'),(9,'Npath'),(10,'Linktype');
+INSERT INTO SHOPS([ID],[sName]) VALUES(11,'Aibox'),(12,'Voonyx'),(13,'Flashset'),(14,'Dabtype'),(15,'Jaxnation'),(16,'Agivu'),(17,'Skipfire'),(18,'Twitternation'),(19,'Jaxspan'),(20,'Kwilith');
+INSERT INTO SHOPS([ID],[sName]) VALUES(21,'Roomm'),(22,'Topiczoom'),(23,'Zava'),(24,'Gabtype'),(25,'Jaxworks'),(26,'Twimbo'),(27,'Skinte'),(28,'Skinte'),(29,'Twimm'),(30,'Flipbug');
+INSERT INTO SHOPS([ID],[sName]) VALUES(31,'Ntag'),(32,'Photobean'),(33,'Tavu'),(34,'Demizz'),(35,'Innotype'),(36,'Feedmix'),(37,'Bubbletube'),(38,'Rhyloo	'),(39,'Jaxworks'),(40,'Livetube');
+INSERT INTO SHOPS([ID],[sName]) VALUES(41,'Mita'),(42,'Abatz'),(43,'Voonte'),(44,'Gigashots'),(45,'Devshare'),(46,'Twitterbeat'),(47,'Gigaclub'),(48,'Fatz'),(49,'Vidoo'),(50,'Voomm');
+INSERT INTO SHOPS([ID],[sName]) VALUES(51,'Shuffletag'),(52,'Cogibox'),(53,'Twitterwire'),(54,'Talane'),(55,'Katz'),(56,'Wikizz'),(57,'Yakidoo'),(58,'Trupe'),(59,'Bluezoom'),(60,'Oyoloo');
+INSERT INTO SHOPS([ID],[sName]) VALUES(61,'Skinix'),(62,'Rhycero'),(63,'Twimbo'),(64,'Mynte'),(65,'Dabshots'),(66,'Feedfire'),(67,'Devify'),(68,'Topicware'),(69,'Wikivu'),(70,'Babblestorm');
+INSERT INTO SHOPS([ID],[sName]) VALUES(71,'Devpulse'),(72,'Chatterpoint'),(73,'Edgeify'),(74,'Muxo'),(75,'Gabvine'),(76,'Jabberbean'),(77,'Twiyo'),(78,'Blogtag'),(79,'Skalith'),(80,'Youbridge');
+INSERT INTO SHOPS([ID],[sName]) VALUES(81,'Yadel'),(82,'Thoughtstorm'),(83,'Rhyzio'),(84,'Gigabox'),(85,'Fivebridge'),(86,'Mydo'),(87,'Linkbridge'),(88,'Buzzster'),(89,'Gabtune'),(90,'Youspan');
+INSERT INTO SHOPS([ID],[sName]) VALUES(91,'Thoughtblab'),(92,'Meetz'),(93,'Photobug'),(94,'Yakidoo'),(95,'Teklist'),(96,'Mydeo'),(97,'Kare'),(98,'Trudeo'),(99,'Oyoyo'),(100,'Omba');
+INSERT INTO SHOPS([ID],[sName]) VALUES(101,'Youspan'),(102,'Skiba'),(103,'Voonder'),(104,'Photobug'),(105,'Skyvu'),(106,'Skiba'),(107,'Flashdog'),(108,'Roombo'),(109,'Bluejam'),(110,'Mymm');
+INSERT INTO SHOPS([ID],[sName]) VALUES(111,'Thoughtstorm'),(112,'Tagchat'),(113,'Voolia'),(114,'Browsecat'),(115,'Eadel'),(116,'Jaxspan'),(117,'Mynte'),(118,'Feedfish'),(119,'Pixonyx'),(120,'Brainsphere');
 
 SET IDENTITY_INSERT SHOPS OFF;
 
-SET IDENTITY_INSERT [USERS] ON;
+SET IDENTITY_INSERT USERS ON;
 
-INSERT INTO USERS VALUES(1,'Burton'),(2,'Orlando'),(3,'Wallace'),(4,'Evelyn'),(5,'Shaine'),(6,'Quinn'),(7,'Penelope'),(8,'Erich'),(9,'Roth'),(10,'Laura');
-INSERT INTO USERS VALUES(11,'Aurelia'),(12,'Wade'),(13,'Aristotle'),(14,'Justina'),(15,'Elmo'),(16,'Madaline'),(17,'Cheyenne'),(18,'Harrison'),(19,'Kelly'),(20,'Bradley');
-INSERT INTO USERS VALUES(21,'Hop'),(22,'Larissa'),(23,'Vernon'),(24,'Delilah'),(25,'Lars'),(26,'Harrison'),(27,'Kendall'),(28,'Maryam'),(29,'Irma'),(30,'Seth');
-INSERT INTO USERS VALUES(31,'Avram'),(32,'Logan'),(33,'Tanek'),(34,'Sylvester'),(35,'Lars'),(36,'Catherine'),(37,'Sigourney'),(38,'Noble'),(39,'Lacota'),(40,'Emma');
-INSERT INTO USERS VALUES(41,'Constance'),(42,'Hilda'),(43,'Cruz'),(44,'Adria'),(45,'Wynne'),(46,'Conan'),(47,'Lamar'),(48,'Jack'),(49,'Amos'),(50,'Erasmus');
-INSERT INTO USERS VALUES(51,'Myra'),(52,'Ciara'),(53,'Christian'),(54,'Yolanda'),(55,'Arthur'),(56,'Gay'),(57,'Aspen'),(58,'Baxter'),(59,'Steel'),(60,'Nolan');
-INSERT INTO USERS VALUES(61,'Helen'),(62,'Amy'),(63,'Deacon'),(64,'Arden'),(65,'Conan'),(66,'Benedict'),(67,'Shea'),(68,'Shellie'),(69,'Linda'),(70,'Elijah');
-INSERT INTO USERS VALUES(71,'Charde'),(72,'Alea'),(73,'Ocean'),(74,'Latifah'),(75,'Duncan'),(76,'Robert'),(77,'Tyrone'),(78,'Upton'),(79,'Tatyana'),(80,'Harriet');
-INSERT INTO USERS VALUES(81,'Chase'),(82,'Merritt'),(83,'Kermit'),(84,'Macaulay'),(85,'Simone'),(86,'Reece'),(87,'Nomlanga'),(88,'Nita'),(89,'Armando'),(90,'Hamish');
-INSERT INTO USERS VALUES(91,'Suki'),(92,'Renee'),(93,'Noah'),(94,'Jamalia'),(95,'Jaime'),(96,'Amanda'),(97,'Barry'),(98,'Amir'),(99,'Mufutau'),(100,'Shafira');
-INSERT INTO USERS VALUES(101,'Bertha'),(102,'Madeline'),(103,'Harper'),(104,'Andrew'),(105,'Quinn'),(106,'Deacon'),(107,'Jerome'),(108,'Orli'),(109,'Desiree'),(110,'Danielle');
-INSERT INTO USERS VALUES(111,'Yasir'),(112,'Fulton'),(113,'Nero'),(114,'Stephanie'),(115,'Stuart'),(116,'Boris'),(117,'Constance'),(118,'Charde'),(119,'Merrill'),(120,'Igor');
+INSERT INTO USERS([ID],[name]) VALUES(1,'Burton'),(2,'Orlando'),(3,'Wallace'),(4,'Evelyn'),(5,'Shaine'),(6,'Quinn'),(7,'Penelope'),(8,'Erich'),(9,'Roth'),(10,'Laura');
+INSERT INTO USERS([ID],[name]) VALUES(11,'Aurelia'),(12,'Wade'),(13,'Aristotle'),(14,'Justina'),(15,'Elmo'),(16,'Madaline'),(17,'Cheyenne'),(18,'Harrison'),(19,'Kelly'),(20,'Bradley');
+INSERT INTO USERS([ID],[name]) VALUES(21,'Hop'),(22,'Larissa'),(23,'Vernon'),(24,'Delilah'),(25,'Lars'),(26,'Harrison'),(27,'Kendall'),(28,'Maryam'),(29,'Irma'),(30,'Seth');
+INSERT INTO USERS([ID],[name]) VALUES(31,'Avram'),(32,'Logan'),(33,'Tanek'),(34,'Sylvester'),(35,'Lars'),(36,'Catherine'),(37,'Sigourney'),(38,'Noble'),(39,'Lacota'),(40,'Emma');
+INSERT INTO USERS([ID],[name]) VALUES(41,'Constance'),(42,'Hilda'),(43,'Cruz'),(44,'Adria'),(45,'Wynne'),(46,'Conan'),(47,'Lamar'),(48,'Jack'),(49,'Amos'),(50,'Erasmus');
+INSERT INTO USERS([ID],[name]) VALUES(51,'Myra'),(52,'Ciara'),(53,'Christian'),(54,'Yolanda'),(55,'Arthur'),(56,'Gay'),(57,'Aspen'),(58,'Baxter'),(59,'Steel'),(60,'Nolan');
+INSERT INTO USERS([ID],[name]) VALUES(61,'Helen'),(62,'Amy'),(63,'Deacon'),(64,'Arden'),(65,'Conan'),(66,'Benedict'),(67,'Shea'),(68,'Shellie'),(69,'Linda'),(70,'Elijah');
+INSERT INTO USERS([ID],[name]) VALUES(71,'Charde'),(72,'Alea'),(73,'Ocean'),(74,'Latifah'),(75,'Duncan'),(76,'Robert'),(77,'Tyrone'),(78,'Upton'),(79,'Tatyana'),(80,'Harriet');
+INSERT INTO USERS([ID],[name]) VALUES(81,'Chase'),(82,'Merritt'),(83,'Kermit'),(84,'Macaulay'),(85,'Simone'),(86,'Reece'),(87,'Nomlanga'),(88,'Nita'),(89,'Armando'),(90,'Hamish');
+INSERT INTO USERS([ID],[name]) VALUES(91,'Suki'),(92,'Renee'),(93,'Noah'),(94,'Jamalia'),(95,'Jaime'),(96,'Amanda'),(97,'Barry'),(98,'Amir'),(99,'Mufutau'),(100,'Shafira');
+INSERT INTO USERS([ID],[name]) VALUES(101,'Bertha'),(102,'Madeline'),(103,'Harper'),(104,'Andrew'),(105,'Quinn'),(106,'Deacon'),(107,'Jerome'),(108,'Orli'),(109,'Desiree'),(110,'Danielle');
+INSERT INTO USERS([ID],[name]) VALUES(111,'Yasir'),(112,'Fulton'),(113,'Nero'),(114,'Stephanie'),(115,'Stuart'),(116,'Boris'),(117,'Constance'),(118,'Charde'),(119,'Merrill'),(120,'Igor');
 
 SET IDENTITY_INSERT [USERS] OFF;
 
