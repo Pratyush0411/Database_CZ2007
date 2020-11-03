@@ -1,10 +1,10 @@
 CREATE TABLE SHOPS (
-  ID    int  IDENTITY (1,1), 
+  ID int NOT NULL IDENTITY (1,1), 
   sName varchar(255), 
   PRIMARY KEY (ID));
 
 CREATE TABLE USERS (
-    ID int IDENTITY (1,1),
+    ID int NOT NULL IDENTITY (1,1),
     Name varchar(255),
     PRIMARY KEY (ID));
 
@@ -113,8 +113,8 @@ CREATE TABLE FEEDBACK (
 
 CREATE TABLE PRICE_HISTORY (
   ID                  int NOT NULL IDENTITY (1,1), 
-  Start_date          datetime NOT NULL, 
-  End_date            datetime NOT NULL, 
+  Start_date          date NOT NULL, 
+  End_date            date NOT NULL, 
   Price                 numeric(19, 0), 
   PRODUCTS_IN_SHOPSID int NOT NULL, 
   PRIMARY KEY (ID),
