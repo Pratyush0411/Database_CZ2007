@@ -1,10 +1,4 @@
-CREATE TABLE PRODUCTSINSHOPS(
-   sName            VARCHAR(13) NOT NULL
-  ,pName            VARCHAR(13) NOT NULL
-  ,Price_In_Shop   MONEY NOT NULL
-  ,Quantity_In_Shop INTEGER  NOT NULL
-  ,PRIMARY KEY(sName,pName)
-);
+SET IDENTITY_INSERT PRODUCTSINSHOPS ON
 INSERT INTO PRODUCTSINSHOPS(sName,pName,Price_In_Shop,Quantity_In_Shop) VALUES ('Skajo','Galaxy Tab A',300.05,89);
 INSERT INTO PRODUCTSINSHOPS(sName,pName,Price_In_Shop,Quantity_In_Shop) VALUES ('Centidel','iPhone Xs',610.46,21);
 INSERT INTO PRODUCTSINSHOPS(sName,pName,Price_In_Shop,Quantity_In_Shop) VALUES ('Yadel','ABC TV',468.92,67);
@@ -125,3 +119,4 @@ INSERT INTO PRODUCTSINSHOPS(sName,pName,Price_In_Shop,Quantity_In_Shop) VALUES (
 INSERT INTO PRODUCTSINSHOPS(sName,pName,Price_In_Shop,Quantity_In_Shop) VALUES ('Feedfish','ABC TV',526.96,80);
 INSERT INTO PRODUCTSINSHOPS(sName,pName,Price_In_Shop,Quantity_In_Shop) VALUES ('Pixonyx','iPhone 7',610.56,23);
 INSERT INTO PRODUCTSINSHOPS(sName,pName,Price_In_Shop,Quantity_In_Shop) VALUES ('Brainsphere','iPhone 7',634.95,45);
+SET IDENTITY_INSERT Feedback OFF
