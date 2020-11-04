@@ -121,3 +121,4 @@ VALUES
 (117,'Bad packet','addressed','12-12-2019 18:16:00.000','12-13-2019 19:20:00.000',3,40),
 (118,'Delivery man broke the pack','addressed','12-12-2019 20:31:00.000','12-16-2019 18:31:00.000',4,45),
 (119,'Too late for delivery','addressed','12-12-2019 19:32:00.000','12-15-2019 14:44:00.000',6,41);
+SET IDENTITY_INSERT COMPLAINTS OFF
