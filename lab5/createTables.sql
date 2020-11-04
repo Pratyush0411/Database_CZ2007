@@ -32,7 +32,7 @@ CREATE TABLE PRODUCTS (
   PRIMARY KEY (ID));
 
 CREATE TABLE PRODUCTS_IN_ORDERS (
-  ID                int  IDENTITY (1,1), 
+  ID                int NOT NULL IDENTITY (1,1), 
   Price_In_Order    numeric(19, 0), 
   Quantity_In_Order int, 
   Delivery_date   datetime, 
