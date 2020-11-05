@@ -50,7 +50,7 @@ WHERE (A1.PRODUCTSID = A2.PRODUCTSID AND A3.PRODUCTSID = A2.PRODUCTSID)
 AND( (A1.yr = A2.yr AND A2.yr = A3.yr AND (A2.mon - A1.mon) = 1 AND (A3.mon - A2.mon) =1 )
 OR  (A1.yr = (A2.yr-1) AND A2.yr = A3.yr AND A1.mon = 12 AND A2.mon =1 AND A3.mon = 2 )
 OR (A1.yr = A2.yr AND A2.yr = A3.yr-1 AND A1.mon=11 AND A2.mon = 12 AND A3.mon =1 ))
-AND (A1.purchases > A2.purchases AND A2.purchases > A3.purchases)
+AND (A1.purchases < A2.purchases AND A2.purchases < A3.purchases)
 )
 go
 -- finding product name for those products
