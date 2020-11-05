@@ -5,14 +5,12 @@ WITH minLatency AS
 SELECT TOP 1 EMPLOYEESID, AVG(datediff(second, Filed_date_time, Handled_date_time)) AS latency
 FROM COMPLAINTS
 GROUP BY EMPLOYEESID
-ORDER BY latency
 )
 
 -- Find the employee name from table 
 SELECT name
 FROM EMPLOYEES, minLatency
 WHERE EMPLOYEES.ID = minLatency.EMPLOYEESID;
-
 
 
 -- query 7
