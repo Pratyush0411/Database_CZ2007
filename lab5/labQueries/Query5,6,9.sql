@@ -9,7 +9,7 @@ WITH SAM_PRODUCTS AS
 FROM PRODUCTS 
 WHERE maker = 'Samsung')
 -- perform left join because we need even the products not sold by any shop
-SELECT SAM_PRODUCTS.Name, COUNT(PRODUCTS_IN_SHOPS.SHOPSID) 
+SELECT SAM_PRODUCTS.Name, COUNT(DISTINCT PRODUCTS_IN_SHOPS.SHOPSID) 
 FROM SAM_PRODUCTS
 LEFT JOIN PRODUCTS_IN_SHOPS 
 ON PRODUCTS_IN_SHOPS.PRODUCTSID = SAM_PRODUCTS.ID
@@ -42,7 +42,7 @@ FROM PRODUCTS_IN_ORDERS
 JOIN ORDERS ON PRODUCTS_IN_ORDERS.ORDERSID = ORDERS.ID
 GROUP BY PRODUCTS_IN_ORDERS.PRODUCTSID, MONTH(ORDERS.Date_time), YEAR(ORDERS.Date_time))
 go
--- finding products increasing sold over the past 3 months
+-- finding products increasingly sold over the past 3 months
 create view T2 AS(
 SELECT  distinct A1.PRODUCTSID
 FROM T1 A1, T1 A2, T1 A3
