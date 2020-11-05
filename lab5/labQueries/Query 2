@@ -1,0 +1,10 @@
+SELECT pName, oID, sName, ROUND(AVG(Rating),2) AS Average_Rating
+FROM PRODUCTS-IN-ORDERS PIO, Feedback F
+WHERE PIO.pName IN 
+    	(SELECT pName
+	 FROM Feedback 
+	 WHERE Rating = 5 
+	 AND Date-time >= '2020-08-01' AND Date-time < ='2020-08-31'
+    	 GROUP BY pName 
+	 HAVING COUNT(Rating) >= 100) 
+GROUP BY PIO.pName ORDER BY Average_Rating DESC;
