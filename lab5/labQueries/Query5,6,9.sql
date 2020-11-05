@@ -36,16 +36,16 @@ AND S_ID = ID;
 
 --query 9
 -- finding purchases of every product for every month in every year
-create view T1 as(
+CREATE VIEW ProductsMonthlySales as(
 SELECT PRODUCTS_IN_ORDERS.PRODUCTSID, MONTH(ORDERS.Date_time) as mon, YEAR(ORDERS.Date_time)AS yr, SUM(PRODUCTS_IN_ORDERS.Quantity_In_Order) AS purchases
 FROM PRODUCTS_IN_ORDERS
 JOIN ORDERS ON PRODUCTS_IN_ORDERS.ORDERSID = ORDERS.ID
 GROUP BY PRODUCTS_IN_ORDERS.PRODUCTSID, MONTH(ORDERS.Date_time), YEAR(ORDERS.Date_time))
-go
--- finding products increasingly sold over the past 3 months
-create view T2 AS(
+GO 
+
+create view increasing AS(
 SELECT  distinct A1.PRODUCTSID
-FROM T1 A1, T1 A2, T1 A3
+FROM ProductsMonthlySales A1, ProductsMonthlySales A2, ProductsMonthlySales A3
 WHERE (A1.PRODUCTSID = A2.PRODUCTSID AND A3.PRODUCTSID = A2.PRODUCTSID)
 AND( (A1.yr = A2.yr AND A2.yr = A3.yr AND (A2.mon - A1.mon) = 1 AND (A3.mon - A2.mon) =1 )
 OR  (A1.yr = (A2.yr-1) AND A2.yr = A3.yr AND A1.mon = 12 AND A2.mon =1 AND A3.mon = 2 )
@@ -55,6 +55,6 @@ AND (A1.purchases < A2.purchases AND A2.purchases < A3.purchases)
 go
 -- finding product name for those products
 SELECT Name 
-From T2, PRODUCTS
-WHERE T2.PRODUCTSID = PRODUCTS.ID;
+From increasing, PRODUCTS
+WHERE increasing.PRODUCTSID = PRODUCTS.ID;
 
