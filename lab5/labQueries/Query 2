@@ -8,3 +8,15 @@ WHERE PIO.pName IN
     	 GROUP BY pName 
 	 HAVING COUNT(Rating) >= 100) 
 GROUP BY PIO.pName ORDER BY Average_Rating DESC;
+
+//new one
+SELECT p.Name, ROUND(AVG(Rating),2) AS Average_Rating
+FROM FEEDBACK f, PRODUCTS_IN_ORDERS pio, PRODUCTS p
+WHERE f.PRODUCTS_IN_ORDERSID = pio.ID AND
+  pio.PRODUCTSID = p.ID AND
+	  f.Rating = 5
+	  AND f.Date_time >= '2020-08-01' AND f.Date_time < ='2020-08-31'
+GROUP BY p.Name
+HAVING COUNT(f.Rating) >= 100
+ORDER BY Average_Rating DESC;
+
