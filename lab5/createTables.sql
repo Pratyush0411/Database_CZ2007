@@ -33,14 +33,23 @@ CREATE TABLE PRODUCTS (
    PRIMARY KEY (ID));
 
 CREATE TABLE PRODUCTS_IN_ORDERS (
-  ......
-  ......
-
+  ID                int NOT NULL IDENTITY (1,1), 
+  Price_In_Order    numeric(19, 0), 
+  Quantity_In_Order int, 
+  Delivery_date   datetime, 
+  Status            varchar(255), 
+  PRODUCTSID        int NOT NULL, 
+  SHOPSID           int NOT NULL, 
+  ORDERSID          int NOT NULL, 
+  PRIMARY KEY (ID),
+  FOREIGN KEY (PRODUCTSID) REFERENCES PRODUCTS(ID)
+  ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (SHOPSID) REFERENCES SHOPS(ID)
+  ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (ORDERSID) REFERENCES ORDERS(ID)
+  ON DELETE CASCADE ON UPDATE CASCADE, 
   CHECK (Price_In_Order>0),
-  CHECK(Status='being processed' OR Status='shipped' OR Status='delivered' OR Status='returned'),
-  CHECK((Status='delivered' AND Delivery_date IS NOT NULL)
-	OR (Status='returned' AND Delivery_date IS NOT NULL)
-	OR (Status<>'returned' AND Status<>'delivered' AND Delivery_date IS NULL))
+  CHECK(Status='being processed' OR Status='shipped' OR Status='delivered' OR Status='returned')
   );
 
 CREATE TABLE PRODUCTS_IN_SHOPS (
@@ -119,8 +128,7 @@ CREATE TABLE PRICE_HISTORY (
   );
 
 
-
-  -- Extra implement, TRIGGER
+-- Extra implement, TRIGGER
 CREATE TRIGGER autoFillDate
 ON PRODUCTS_IN_ORDERS
 AFTER INSERT, UPDATE
