@@ -12,7 +12,7 @@ CREATE TABLE ORDERS (
   ID                 int  IDENTITY (1,1), 
   Shipping_address varchar(255) NOT NULL, 
   Date_time        datetime DEFAULT getdate(), 
-  USERID             int NOT NULL, 
+  USERID            int NOT NULL, 
   PRIMARY KEY (ID),
   FOREIGN KEY (USERID) REFERENCES USERS(ID)
   ON DELETE CASCADE ON UPDATE CASCADE,
@@ -33,21 +33,9 @@ CREATE TABLE PRODUCTS (
    PRIMARY KEY (ID));
 
 CREATE TABLE PRODUCTS_IN_ORDERS (
-  ID                int NOT NULL IDENTITY (1,1), 
-  Price_In_Order    numeric(19, 0), 
-  Quantity_In_Order int, 
-  Delivery_date   datetime, 
-  Status            varchar(255), 
-  PRODUCTSID        int NOT NULL, 
-  SHOPSID           int NOT NULL, 
-  ORDERSID          int NOT NULL, 
-  PRIMARY KEY (ID),
-  FOREIGN KEY (PRODUCTSID) REFERENCES PRODUCTS(ID)
-  ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (SHOPSID) REFERENCES SHOPS(ID)
-  ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (ORDERSID) REFERENCES ORDERS(ID)
-  ON DELETE CASCADE ON UPDATE CASCADE, 
+  ......
+  ......
+
   CHECK (Price_In_Order>0),
   CHECK(Status='being processed' OR Status='shipped' OR Status='delivered' OR Status='returned'),
   CHECK((Status='delivered' AND Delivery_date IS NOT NULL)
@@ -116,7 +104,6 @@ CREATE TABLE FEEDBACK (
   FOREIGN KEY (PRODUCTS_IN_ORDERSID) REFERENCES PRODUCTS_IN_ORDERS(ID),
   FOREIGN KEY (USERID) REFERENCES USERS(ID)
   ON DELETE CASCADE ON UPDATE CASCADE,
-
     );
 
 CREATE TABLE PRICE_HISTORY (
@@ -130,3 +117,20 @@ CREATE TABLE PRICE_HISTORY (
   ON DELETE CASCADE ON UPDATE CASCADE,
   CHECK ([Start_date] < [End_date]),   
   );
+
+
+
+  -- Extra implement, TRIGGER
+CREATE TRIGGER autoFillDate
+ON PRODUCTS_IN_ORDERS
+AFTER INSERT, UPDATE
+AS
+BEGIN
+UPDATE A
+SET Delivery_date = GETDATE()
+FROM PRODUCTS_IN_ORDERS as a
+JOIN inserted as b   
+ON a.ID = b.ID 
+WHERE b.Status = 'delivered'
+END
+GO
